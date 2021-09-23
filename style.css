@@ -1,0 +1,220 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    background-color: #fff;
+    /* font-size:62.5%; */
+    font-size: 10px;
+    padding: 0 4rem;
+}
+.main {
+    display: flex;
+}
+.side-nav {
+    width: 20%;
+    padding: 1rem;
+}
+.side-nav .navbox {
+    margin: 1rem 0;
+}
+.side-nav .navbox ul {
+    margin: 2rem 0;
+}
+.side-nav .navbox li {
+    font-size: 1rem;
+    color: #b1b1b1;
+    list-style: none;
+    margin-top: 30px;
+    font-family: "Poppins", sans-serif;
+}
+.logo-box .logo {
+    font-weight: 700;
+    font-size: 3rem;
+}
+.btn-box #text-btn {
+    display: inline-block;
+    padding: 1rem 1rem;
+    border-radius: 25px;
+    width: 140px;
+    border: none;
+    background-color: #f55;
+    color: #fff;
+    line-height: 1.5em;
+    margin-top: 30px;
+}
+.dashboard {
+    width: 80%;
+    margin: 5rem 0 0 0;
+    padding: 2rem;
+}
+.dashboard .info {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.dashboard .small-header {
+    width: 20%;
+    color: #b1b1b1;
+    font-size: 1.2rem;
+}
+.dashboard .header {
+    font-size: 4rem;
+    width: 60%;
+    font-weight: 500;
+}
+.food-sec {
+    display: flex;
+    margin: 5rem 0;
+    gap: 20px;
+    text-align: center;
+}
+.card {
+    border-radius: 15px;
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    box-shadow: 2px 23px 32px 20px rgba(130, 124, 124, 0.17);
+    width: 160px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+.card .img-box {
+    margin: 15px 0;
+}
+.card .img-box img {
+    width: 100px;
+    height: 100px;
+    image-orientation: center;
+    border-radius: 50%;
+}
+.card .food-name {
+    font-size: 0.8rem;
+    font-weight: 900;
+    text-align: center;
+    font-family: "helvetica-neue-interface-regular", sans-serif;
+}
+#red-bar {
+    width: 60px;
+    display: block;
+    border: none;
+    border-top: 3px solid #f55;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+
+.font-elep {
+    font-family: "elephant";
+}
+
+#navicon,
+#img-btn {
+    display: none;
+}
+
+@media screen and (max-width: 680px) {
+    body {
+        /* background-color:red; */
+        padding: 0;
+    }
+    .main {
+        flex-direction: column;
+    }
+
+    #navicon {
+        display: block;
+        color: #f55;
+        width: 60px;
+    }
+    #text-btn {
+        display: none !important;
+    }
+    #img-btn {
+        display: block;
+    }
+    .btn-box #img-btn {
+        background-color: transparent;
+        border: none;
+    }
+    #img-btn svg {
+        color: #f55;
+        width: 60px;
+    }
+    .side-nav .navbox ul,
+    .hideTxt {
+        display: none;
+    }
+
+    .side-nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+    }
+
+    .side-nav .navbox {
+        margin: 1rem 0;
+        order: -1;
+    }
+
+    .side-nav .navbox li {
+        font-size: 1rem;
+        color: #b1b1b1;
+        list-style: none;
+        margin-top: 30px;
+        font-family: "Poppins", sans-serif;
+    }
+    .logo-box .logo {
+        font-weight: 700;
+        font-size: 10vw;
+    }
+    .dashboard {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .dashboard .info {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .dashboard .small-header {
+        width: 100%;
+        order: 1;
+        font-size: 2vh;
+    }
+    .dashboard .header {
+        width: 100%;
+        font-size: 5vh;
+    }
+    .food-sec {
+        gap: 10px;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .food-sec {
+        gap: 40px;
+    }
+    .card:last-child {
+        display: none;
+    }
+    .card {
+        width: 38vw;
+        height: 28vh;
+    }
+    .card .img-box img {
+        width: 25vw;
+        height: 15vh;
+        border-radius: 50%;
+    }
+    .card .food-name {
+        font-size: 1.5vh;
+    }
+}
